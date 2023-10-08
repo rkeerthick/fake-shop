@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './containers/Header'
 import ProductList from './containers/ProductList'
 import ProductComponent from './containers/ProductComponent'
+import ProductDetails from './containers/ProductDetails'
 
 const Routing = () => {
   return (
@@ -10,7 +11,7 @@ const Routing = () => {
     <Header />
     <Routes>
         <Route path="/" element={<ProductList />} />
-        <Route path="/product/:productId" element={<ProductComponent />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
     </Routes>
     </BrowserRouter>
   )
